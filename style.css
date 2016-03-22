@@ -65,6 +65,17 @@ body {
   clear: both;
 }
 
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+    width: 99%;
+}
+
+.menu .img-responsive {
+	max-width: 35%;
+    padding: 5px;
+}
+
 .rowMargin {
 	height: 85%;
     width: 100%;
@@ -76,7 +87,7 @@ body {
 }
 
 .inputField {
-	height: 400px;
+	height: 90%;
 	border: 2px solid lightsalmon;
 	border-radius: 8px;
 	background-color: #fff;
@@ -119,8 +130,8 @@ a {
   -webkit-box-shadow: 1px 0 1px 0 rgba(0,0,0,.1);
   box-shadow: 1px 0 1px 0 rgba(0,0,0,.1);
 
-  border: 1px solid #31708f;
-  background-color: #31708f;
+  border: 1px solid #0597b5;
+  background-color: #0597b5;
 }
 
   .navbar i { margin-right: 10px; }
@@ -128,7 +139,7 @@ a {
     display: block;
     margin: 0;
     width: 100%;
-    height: 50px;
+    height: 60px;
     color: #444;
     background-color: #fff;
     font-size: 23px;
