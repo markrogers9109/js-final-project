@@ -5,8 +5,8 @@
 		<link rel="icon" type="image/png" href="images/Drawing.png" class="img-responsive">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-        <title>Communi-co</title>
-        <link href="style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+        <title>CommuniCo</title>
+        <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 
         <!-- Montserrat Sans -->
         <link href='http://fonts.googleapis.com/css?family=Montserrat:400, 700' rel='stylesheet' type='text/css'>
@@ -25,7 +25,7 @@
 
 	</head>
 	<body>
-		<div class="col-md-6 col-md-offset-5 signIn">
+		<!-- <div class="col-md-6 col-md-offset-5 signIn">
 			<form class="form-inline">
 				<div class="form-group">
 					<label class="sr-only" for="exampleInputEmail3">Email address</label>
@@ -40,73 +40,91 @@
 						<input type="checkbox"> Remember me
 					</label>
 				</div>
-				<button type="submit" class="btn btn-default">Sign in</button>
+				<button type="submit" class="btn btn-default" id="alert">Sign in</button>
 			</form>
-		</div>
+		</div> -->
 
-		<div class="row rowMargin">
+		<div class="row">
+			<div class="col-md-5 col-md-offset-5 signIn">
+				<form class="form-inline">
+					<div class="form-group">
+						<label class="sr-only" for="exampleInputEmail3">Email address</label>
+						<input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+					</div>
+					<div class="form-group">
+						<label class="sr-only" for="exampleInputPassword3">Password</label>
+						<input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox"> Remember me
+						</label>
+					</div>
+					<button type="submit" class="btn btn-default" id="alert">Sign in</button>
+				</form>
+			</div>
 			<div class="col-sm-2 fold">
-				  <div class="navbar">
+				<div class="navbar">
 					<a class="menu" href="#"><img src="images/Drawing.png" alt="#" class="img-responsive logo center-block" /></a>
 
 					<div class="link large" href="#">
-					  <span class="active"><i class="glyphicon glyphicon-user"></i>Profile</span>
-					  <ul class="hover-bot">
-						  <a href="">Edit</a>
-  						  <a href="">Themes</a>
-					  </ul>
-					  <ul class="hover-top">
-						  <a href="">Friends</a>
-  						  <a href="">Log Out</a>
-					  </ul>
+						<span class="active"><i class="glyphicon glyphicon-user"></i>Profile</span>
+						<ul class="hover-bot">
+							<a href="">Friends</a>
+							<a href="">Edit</a>
+					    </ul>
+					    <ul class="hover-top">
+							<a href="">Themes</a>
+  							<a href="">Log Out</a>
+					    </ul>
 					</div>
 					<div class="link" href="#">
-					  <span class="active"><i class="glyphicon glyphicon-heart-empty"></i>Favorites</span>
-					  <ul class="hover-bot">
-						<a href="">Groups</a>
-					  </ul>
-					  <ul class="hover-top">
-						<a href="">Members</a>
-					  </ul>
+						<span class="active"><i class="glyphicon glyphicon-heart-empty"></i>Favorites</span>
+						<ul class="hover-bot">
+							<a href="">Groups</a>
+						</ul>
+						<ul class="hover-top">
+							<a href="">Members</a>
+						</ul>
 					</div>
 					<div class="link" href="#">
-					  <span class="active"><i class="glyphicon glyphicon-link"></i>Groups</span>
-					  <ul class="hover-bot">
-						<a href="">Share</a>
-					  </ul>
-					  <ul class="hover-top">
-						<a href="">Add to Circle</a>
-					  </ul>
+						<span class="active"><i class="glyphicon glyphicon-link"></i>Groups</span>
+						<ul class="hover-bot">
+							<a href="">Share</a>
+						</ul>
+						<ul class="hover-top">
+							<a href="">Add to Circle</a>
+						</ul>
 					</div>
 					<div class="link" href="#">
-					  <span class="active"><i class="glyphicon glyphicon-comment"></i>Members Online</span>
-					  <ul class="hover-bot">
-						<a href="">Mark Rogers</a>
-					  </ul>
-					  <ul class="hover-top">
-						<a href="">Support</a>
-					  </ul>
+						<span class="active"><i class="glyphicon glyphicon-comment"></i>Members Online</span>
+						<ul class="hover-bot">
+							<a href="">Mark Rogers</a>
+						</ul>
+						<ul class="hover-top">
+							<a href="">Support</a>
+						</ul>
 					</div>
 
 					<div class="end"></div>
-				  </div>
-			  </div>
-			  <div class="col-sm-8 col-sm-offset-1 inputField"></div>
-		  </div>
-		  <div class="row">
-			  <form class="form-horizontal col-sm-8 col-sm-offset-3 fixed-bottom">
-				<div class="form-group form-group-lg fixed-bottom">
-				  <div class="col-sm-11">
-				  	<input class="form-control" type="text" id="formGroupInputLarge" placeholder="Large input">
-				  </div>
-				  <div class="col-sm-1">
-				  	<button type="button" class="btn btn-primary">Submit</button>
-				  </div>
 				</div>
-			  </form>
-		  </div>
+			</div>
+			<div class="col-sm-8 col-sm-offset-3 inputField  rowMargin" id="textOutputId"></div>
+		</div>
+		<div class="row">
+			<form class="form-horizontal col-sm-8 col-sm-offset-3 fixed-bottom">
+				<div class="form-group form-group-lg fixed-bottom">
+					<div class="col-sm-11">
+				  		<input class="form-control" type="text" id="input1Id" placeholder="Large input">
+					</div>
+					<div class="col-sm-1">
+				  		<button type="button" class="btn btn-primary" id="goBtnId">Submit</button>
+					</div>
+				</div>
+			</form>
+		</div>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	    <!-- <script src="js/animation.js"></script> -->
+	    <script src="js/script.js"></script>
         <!-- <script src="https://use.typekit.net/jnn1jsw.js"></script> -->
         <!-- <script>try{Typekit.load({ async: true });}catch(e){}</script> -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -114,3 +132,4 @@
 
     </body>
 </html>
+<!-- formGroupInputLarge  -->
