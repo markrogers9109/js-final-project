@@ -91,12 +91,16 @@ body {
 	background: url(../images/5.jpg) fixed;
 }
 
+.rowMargin {
+	height: 85%;
+}
+
 .inputField {
-    height: 650px;
+    height: 80%;
     border: 2px solid lightsalmon;
     border-radius: 8px;
     background-color: #fff;
-    margin-top: 6%;
+    margin-top: 5%;
     margin-bottom: 3%;
 }
 
