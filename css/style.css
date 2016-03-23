@@ -88,7 +88,8 @@ body {
 }
 
 .end {
-	background: url(../images/5.jpg) fixed;
+	background: url(../images/5.jpg) fixed center center;
+	background-size: cover;
 }
 
 .rowMargin {
