@@ -88,12 +88,35 @@ body {
 }
 
 .end {
-	background: url(../images/5.jpg) fixed center center;
-	background-size: cover;
+	/*background: url(../images/5.jpg) fixed center center;
+	background-size: cover;*/
 }
 
 .rowMargin {
 	height: 85%;
+}
+
+#textOutputId li {
+	background-color: #0fa9bd;
+	width: 45%;
+	color: white;
+	font-size: bolder;
+	padding: 7px;
+    margin: 10px;
+    border-radius: 10px 10px 10px 0px;
+}
+
+#textOutputId li button {
+	float: right;
+	color: #11bed4;
+	background-color: transparent;
+    box-sizing: border-box;
+    padding: 0px 6px 3px;
+    border: 2px outset transparent;
+}
+
+#textOutputId li button:hover {
+	color: lightgray;
 }
 
 .inputField {
@@ -265,4 +288,6 @@ a {
       height: 100%;
       background-color: #fff;
       border-top: 1px solid rgba(0,0,0,.1);
+	  background: url(../images/5.jpg) fixed center center;
+  	  background-size: cover;
     }
