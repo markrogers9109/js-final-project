@@ -76,13 +76,8 @@ body {
     padding: 5px;
 }
 
-<<<<<<< HEAD:style.css
-.rowMargin {
-	height: 85%;
-=======
 .fold {
 	/*height: 85%;
->>>>>>> 1e0bc43f553eaca0504edfbe21b2836843e8c484:css/style.css
     width: 100%;
 	text-align: center;
 	padding-top: 5%;
@@ -125,19 +120,12 @@ body {
 }
 
 .inputField {
-<<<<<<< HEAD:style.css
-	height: 90%;
-	border: 2px solid lightsalmon;
-	border-radius: 8px;
-	background-color: #fff;
-=======
     height: 80%;
     border: 2px solid lightsalmon;
     border-radius: 8px;
     background-color: #fff;
     margin-top: 5%;
     margin-bottom: 3%;
->>>>>>> 1e0bc43f553eaca0504edfbe21b2836843e8c484:css/style.css
 }
 
 .form-horizontal {
@@ -177,13 +165,8 @@ a {
 	-webkit-box-shadow: 10px 0 10px 0 rgba(0,0,0,.2);
 	box-shadow: 10px 0 10px 0 rgba(0,0,0,0.2);
 
-<<<<<<< HEAD:style.css
-  border: 1px solid #0597b5;
-  background-color: #0597b5;
-=======
 	border: 1px solid #0597b5;
 	background-color: #0597b5;
->>>>>>> 1e0bc43f553eaca0504edfbe21b2836843e8c484:css/style.css
 }
 
   .navbar i { margin-right: 10px; }
@@ -191,11 +174,7 @@ a {
     display: block;
     margin: 0;
     width: 100%;
-<<<<<<< HEAD:style.css
-    height: 60px;
-=======
     height: 70px;
->>>>>>> 1e0bc43f553eaca0504edfbe21b2836843e8c484:css/style.css
     color: #444;
     background-color: #fff;
     font-size: 23px;
