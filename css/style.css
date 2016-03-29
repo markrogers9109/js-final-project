@@ -57,7 +57,7 @@ body, html {
 body {
   margin: 0 auto;
   font: 1em/1.3em Montserrat, Helvetica, sans-serif;
-  background: url(../js-final-project/images/abstract-jumbo2.jpg) no-repeat fixed center center;
+  background: url(../images/abstract-jumbo2.jpg) no-repeat fixed center center;
   /*background-size: cover;*/
 }
 
@@ -76,21 +76,68 @@ body {
     padding: 5px;
 }
 
+<<<<<<< HEAD:style.css
 .rowMargin {
 	height: 85%;
+=======
+.fold {
+	/*height: 85%;
+>>>>>>> 1e0bc43f553eaca0504edfbe21b2836843e8c484:css/style.css
     width: 100%;
 	text-align: center;
 	padding-top: 5%;
-	margin-right: 0px;
+	margin-right: 0px;*/
 	/*background: url(../images/5.jpg) no-repeat fixed center center;
+	background-size: cover;*/
+	text-align: center;
+}
+
+.end {
+	/*background: url(../images/5.jpg) fixed center center;
 	background-size: cover;*/
 }
 
+.rowMargin {
+	height: 85%;
+}
+
+#textOutputId li {
+	background-color: #0fa9bd;
+	width: 45%;
+	color: white;
+	font-size: bolder;
+	padding: 7px;
+    margin: 10px;
+    border-radius: 10px 10px 10px 0px;
+}
+
+#textOutputId li button {
+	float: right;
+	color: #11bed4;
+	background-color: transparent;
+    box-sizing: border-box;
+    padding: 0px 6px 3px;
+    border: 2px outset transparent;
+}
+
+#textOutputId li button:hover {
+	color: lightgray;
+}
+
 .inputField {
+<<<<<<< HEAD:style.css
 	height: 90%;
 	border: 2px solid lightsalmon;
 	border-radius: 8px;
 	background-color: #fff;
+=======
+    height: 80%;
+    border: 2px solid lightsalmon;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-top: 5%;
+    margin-bottom: 3%;
+>>>>>>> 1e0bc43f553eaca0504edfbe21b2836843e8c484:css/style.css
 }
 
 .form-horizontal {
@@ -122,16 +169,21 @@ a {
 
 
 .navbar {
-  position: fixed;
-  left: 0;
-  width: 200px;
-  height: 100%;
+	position: fixed;
+	left: 0;
+	width: 225px;
+	height: 100%;
 
-  -webkit-box-shadow: 1px 0 1px 0 rgba(0,0,0,.1);
-  box-shadow: 1px 0 1px 0 rgba(0,0,0,.1);
+	-webkit-box-shadow: 10px 0 10px 0 rgba(0,0,0,.2);
+	box-shadow: 10px 0 10px 0 rgba(0,0,0,0.2);
 
+<<<<<<< HEAD:style.css
   border: 1px solid #0597b5;
   background-color: #0597b5;
+=======
+	border: 1px solid #0597b5;
+	background-color: #0597b5;
+>>>>>>> 1e0bc43f553eaca0504edfbe21b2836843e8c484:css/style.css
 }
 
   .navbar i { margin-right: 10px; }
@@ -139,7 +191,11 @@ a {
     display: block;
     margin: 0;
     width: 100%;
+<<<<<<< HEAD:style.css
     height: 60px;
+=======
+    height: 70px;
+>>>>>>> 1e0bc43f553eaca0504edfbe21b2836843e8c484:css/style.css
     color: #444;
     background-color: #fff;
     font-size: 23px;
@@ -253,4 +309,6 @@ a {
       height: 100%;
       background-color: #fff;
       border-top: 1px solid rgba(0,0,0,.1);
+	  background: url(../images/5.jpg) fixed center center;
+  	  background-size: cover;
     }
