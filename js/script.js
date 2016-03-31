@@ -11,6 +11,10 @@ function printList() {
     for (var i = 0; i < userObjs.length; i++) {
         var user = userObjs[i];
         var a = document.createElement("li");
+        a["data-index"] = i;
+        a.addEventListener("click", function() {
+            console.log(this["data-index"]);
+        });
         a.textContent = user;
         addBtns(a);
         ul.appendChild(a);
@@ -53,6 +57,18 @@ function addBtns(a) {
     deleteBtn.classList.add("glyphicon");
     deleteBtn.classList.add("glyphicon-remove");
     a.appendChild(deleteBtn);
+    var likeBtn = document.createElement("button");
+    likeBtn.classList.add("glyphicon");
+    likeBtn.classList.add("glyphicon-heart");
+    a.appendChild(likeBtn);
+    likeBtn.addEventListener("click", function() {
+        console.log(this.parentNode);
+        console.log(this.parentNode.textContent);
+        likeBtn.style.color = "lightgray";
+        // deleteList();
+        // printList();
+        console.log(userObjs);
+    });
     editBtn.addEventListener("click", function() {
         console.log(this.parentNode);
         console.log(this.parentNode.textContent);
@@ -68,11 +84,7 @@ function addBtns(a) {
     deleteBtn.addEventListener("click", function() {
         console.log(this.parentNode);
         console.log(this.parentNode.textContent);
-        for (var i = 0; i < userObjs.length; i++) {
-            if (this.parentNode.textContent == userObjs[i]) {
-                userObjs.splice(i, 1)
-            }
-        }
+        userObjs.splice(this.parentNode["data-index"], 1);
         deleteList();
         printList();
     });
